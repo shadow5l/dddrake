@@ -19,7 +19,7 @@
 
         #title {
             margin-top: 20px;
-            font-size: 4em; /* Increased font size */
+            font-size: 8vw; /* Adjust font size based on screen width */
             font-weight: bold; /* Thicker font */
             color: #000000; /* Black color */
             text-shadow: 0 0 20px #FFFFFF, 0 0 30px #FFFFFF, 0 0 40px #FFFFFF; /* Glowing white effect */
@@ -47,13 +47,16 @@
         .image-container {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap; /* Allows images to wrap on smaller screens */
             margin-top: 50px;
+            padding: 0 10px; /* Add padding for mobile */
         }
 
         .image-container img {
-            width: 200px;
-            height: 200px;
-            margin: 0 20px;
+            width: 30vw; /* Width adjusts based on viewport */
+            max-width: 200px; /* Max width to maintain quality on larger screens */
+            height: auto; /* Maintain aspect ratio */
+            margin: 10px 5px; /* Reduced margin for smaller screens */
             cursor: pointer;
             border: 5px solid #fff;
             border-radius: 10px;
@@ -71,7 +74,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 5em;
+            font-size: 10vw; /* Adjust font size based on screen width */
             font-weight: bold;
             color: #fff;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
@@ -98,8 +101,9 @@
         }
 
         .social-media img {
-            width: 40px; /* Adjust size as needed */
-            height: 40px; /* Adjust size as needed */
+            width: 10vw; /* Adjust size based on screen width */
+            max-width: 40px; /* Max width to maintain quality */
+            height: auto; /* Maintain aspect ratio */
             transition: transform 0.3s ease, opacity 0.3s ease;
         }
 
@@ -113,7 +117,7 @@
             position: fixed;
             bottom: 10px;
             left: 10px;
-            font-size: 0.8em;
+            font-size: 2.5vw; /* Adjust font size based on screen width */
             color: #ffffff;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
         }
